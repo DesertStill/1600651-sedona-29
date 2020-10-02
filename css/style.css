@@ -1,0 +1,290 @@
+/* Variables */
+
+:root {
+--basic-white: #ffffff;
+--basic-extra-white: rgba(255, 255, 255, 0.9);
+--basic-blue: #81b3d2;
+--basic-extra-blue: #81b3d3;
+--basic-light: #f2f2f2;
+--basic-neutral: #eeeeee;
+--basic-gray: #666666;
+--basic-brown: #766357;
+--basic-extra-brown: #766458;
+--basic-black: #000000;
+--basic-extra-black: #333333;
+--basic-ultra-black: #231f20;
+--basic-pink: #db95d5;
+
+--special: #a9a9a9;
+}
+
+/* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var (--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+  /* Не уверена, что нужны эти значения, если нет глобальной фоновой картинки, как на странице барбершопа:
+  background-position: top center;
+  background-repeat: no-repeat;
+  */
+
+  a {
+    text-decoration: none;
+}
+
+  img {
+  max-width: 100%;
+  height: auto;
+  text-transform: none;
+}
+
+/* Main header */
+
+.inner-page .main-header {
+  background-color: var(--basic-white);
+}
+
+/* Main navigation */
+
+.main-header-logo {
+  font-weight: 400;
+}
+
+.user-nav {
+  color: inherit;
+}
+
+.main-navigation {
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-white);
+}
+
+/* Site Navigation */
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-white);
+}
+
+/* User navigation */
+
+.site-navigation {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-neutral);
+}
+
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  line-height: 21px;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+li:first-child.feature-item {
+background-color: var(--basic-blue);
+color: var(--basic-white);
+background-image: url("img/image2.png");
+background-position: center, 0 0;
+background-repeat: no-repeat;
+background-size: 1200px 256px;
+}
+
+li:nth-child(2).feature-item {
+background-color: var(--basic-blue);
+color: var(--basic-white);
+background-image: url("img/image3.png");
+background-position: center, 0 0;
+background-repeat: no-repeat;
+background-size: 1200px 256px;
+}
+
+li:nth-child(3).feature-item,
+li:nth-child(4).feature-item,
+li:last-child.feature-item {
+  background-color: var(--basic-neutral);
+}
+
+.benefits {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.benefits h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+/* Backgrounds */
+
+.slogan {
+  background-color: var(--basic-extra-blue);
+  color: var(--basic-white);
+  background-image: url("img/image1.png");
+  background-position: center, 0 0;
+  background-repeat: no-repeat;
+  background-size: 1200px 509px;
+}
+
+/* .inner-page {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+} */
+
+/* Button */
+
+.button {
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--basic-pink);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--special);
+}
+
+/* Contacts */
+
+.footer-contacts-phone {
+  color: inherit;
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-extra-white);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-socials {
+
+}
+
+.icons {
+  list-style: none;
+}
+
+/* Social button */
+
+.social-button {
+  color: var(--basic-blue);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-extra-blue);
+}
+
+/* Copyrights */
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: var(--basic-white);
+  background-color: var(--basic-white);
+}
+
+/* Modal */
+
+.modal {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal-booking {
+  ...
+}
+
+.modal-booking h2 {
+  font-size: 21px;
+  font-weight: 700;
+  background-color: var(--basic-brown);
+  background-position: center, 50% 50%;
+}
+
+/* Other */
+
+.description,
+.caption,
+.footer-contacts-phone {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.lead {
+  line-height: 24px;
+}
+
+.lead h3 {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.inner-page {
+  color: var(--basic-black);
+  background-color: var(--white);
+  font-weight: 700;
+}
