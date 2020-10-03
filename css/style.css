@@ -5,15 +5,19 @@
 --basic-extra-white: rgba(255, 255, 255, 0.9);
 --basic-blue: #81b3d2;
 --basic-extra-blue: #81b3d3;
+--basic-ultra-blue: #669EC0;
+--basic-mare: #5496BD;
 --basic-light: #f2f2f2;
 --basic-neutral: #eeeeee;
+--basic-extra-neutral: #BDBBBC;
 --basic-gray: #666666;
 --basic-brown: #766357;
 --basic-extra-brown: #766458;
+--basic-chocolate: #604E43;
+--basic-extra-chocolate: #503E33;
 --basic-black: #000000;
 --basic-extra-black: #333333;
 --basic-ultra-black: #231f20;
---basic-pink: #db95d5;
 
 --special: #a9a9a9;
 }
@@ -28,16 +32,11 @@ body {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: var (--basic-black);
+  color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
   text-align: center;
 }
-
-  /* Не уверена, что нужны эти значения, если нет глобальной фоновой картинки, как на странице барбершопа:
-  background-position: top center;
-  background-repeat: no-repeat;
-  */
 
   a {
     text-decoration: none;
@@ -52,7 +51,12 @@ body {
 /* Main header */
 
 .inner-page .main-header {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
   background-color: var(--basic-white);
+  text-align: center;
 }
 
 /* Main navigation */
@@ -91,8 +95,7 @@ body {
   color: var(--basic-black);
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover {
   background-color: var(--basic-neutral);
 }
 
@@ -103,6 +106,7 @@ body {
 }
 
 .feature-item {
+  font-size: 14px;
   line-height: 21px;
 }
 
@@ -175,10 +179,13 @@ li:last-child.feature-item {
   border: none;
 }
 
-.button:hover,
-.button:focus,
+.button:hover {
+  background-color: var(--basic-ultra-blue);
+}
+
 .button:active {
-  background-color: var(--basic-pink);
+  background-color: var(--basic-mare);
+  border: none;
 }
 
 .button.disabled,
@@ -188,10 +195,30 @@ li:last-child.feature-item {
   background-color: var(--special);
 }
 
+.button-hotels {
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-brown);
+  border: none;
+}
+
+.button-hotels:hover {
+  background-color: var(--basic-chocolate);
+}
+
+.button-hotels:active {
+  background-color: var(--basic-extra-chocolate);
+  border: none;
+}
+
 /* Contacts */
 
 .footer-contacts-phone {
-  color: inherit;
+  color: var(--basic-black);
 }
 
 /* Main footer */
@@ -203,8 +230,7 @@ li:last-child.feature-item {
   background-repeat: no-repeat;
 }
 
-.footer-contacts a:hover,
-.footer-contacts a:focus {
+.footer-contacts a:hover {
   text-decoration: none;
 }
 
@@ -248,11 +274,10 @@ li:last-child.feature-item {
   ...
 }
 
-.modal-booking h2 {
+.button-hotels a {
   font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
-  background-color: var(--basic-brown);
-  background-position: center, 50% 50%;
 }
 
 /* Other */
