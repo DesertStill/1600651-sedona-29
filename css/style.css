@@ -31,7 +31,7 @@ body {
   font-family: "PT Sans", Aerial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
@@ -51,6 +51,42 @@ body {
 /* Main header */
 
 .inner-page .main-header {
+  width: 1200px;
+  height: 70px;
+  margin: 0;
+  padding: 72px 15px;
+  font-family: "PT Sans", Aerial, sans-serif;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+  margin: 531px 0;
+  padding: 0;
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-extra-blue);
+  text-align: center;
+  background-image: url("img/index-logo.svg");
+  background-position: center, 0 0;
+  background-repeat: no-repeat;
+  background-size: 138px 70px;
+}
+
+/* Main navigation */
+
+.user-nav {
+  width: 98px;
+  height: 26px;
+  margin: 72px 15px;
+  padding: 0;
+  font-family: "PT Sans", Aerial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -59,44 +95,106 @@ body {
   text-align: center;
 }
 
-/* Main navigation */
-
-.main-header-logo {
-  font-weight: 400;
-}
-
-.user-nav {
-  color: inherit;
-}
-
-.main-navigation {
-  font-weight: 700;
-  color: var(--basic-black);
-  background-color: transparent;
-}
-
-.main-navigation-wrapper {
-  background-color: var(--basic-white);
-}
-
 /* Site Navigation */
 
 .site-navigation {
   list-style: none;
 }
 
+/*
 .site-navigation-current a:not([href]) {
   background-color: var(--basic-white);
 }
 
-/* User navigation */
+ User navigation
+
 
 .site-navigation {
   color: var(--basic-black);
 }
 
+
 .site-navigation a:hover {
   background-color: var(--basic-neutral);
+} */
+
+/* Slogan */
+
+.main-background {
+  height: 509px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: right;
+  background-color: var(--basic-extra-blue);
+  color: var(--basic-white);
+  background-image: url("great_view.png");
+  background-position: center, 0 0;
+  background-repeat: no-repeat;
+  background-size: 1200px 509px;
+}
+
+.slogan {
+  width: 457px;
+  height: 351px;
+  margin: 5% auto;
+  padding: 0;
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--basic-extra-blue);
+  color: var(--basic-white);
+  background-image: url("welcome.png");
+  background-position: center, 0 0;
+  background-repeat: no-repeat;
+  background-size: 457px 351px;
+}
+
+/* Headline */
+
+.headline-wrapper {
+  max-height: 216px;
+}
+
+.headline {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Aerial, sans-serif;
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.subtitle {
+  width: 470px;
+  height: 80px;
+  margin: 42px auto 16px;
+  padding: 0;
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.description {
+  width: 519px;
+  height: 26px;
+  margin: 16px auto 51px;
+  padding: 0;
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--basic-extra-black);
+  background-color: var(--basic-white);
+  text-align: center;
 }
 
 /* Features */
@@ -106,17 +204,58 @@ body {
 }
 
 .feature-item {
+  font-family: "PT Sans", Aerial, sans-serif;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-extra-black);
+  background-color: var(--basic-neutral);
+  text-align: center;
 }
 
 .feature-item h3 {
+  font-family: "PT Sans", Aerial, sans-serif;
   font-size: 21px;
   line-height: 21px;
+  font-weight: 700;
+  text-align: center;
 }
+
+.special {
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-extra-black);
+  text-align: center;
+}
+
+.rec {
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-extra-black);
+  text-align: center;
+}
+
+/*
+.photo-1 {
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+  background-image: url("img/image2.png");
+  background-position: right, 50%;
+  background-repeat: no-repeat;
+  background-size: 800px 256px;
+} */
 
 li:first-child.feature-item {
 background-color: var(--basic-blue);
+font-family: "PT Sans", Aerial, sans-serif;
+font-size: 14px;
+line-height: 26px;
+font-weight: 400;
+text-align: center;
 color: var(--basic-white);
 background-image: url("img/image2.png");
 background-position: center, 0 0;
@@ -127,6 +266,11 @@ background-size: 1200px 256px;
 li:nth-child(2).feature-item {
 background-color: var(--basic-blue);
 color: var(--basic-white);
+font-family: "PT Sans", Aerial, sans-serif;
+font-size: 14px;
+line-height: 21px;
+font-weight: 400;
+text-align: center;
 background-image: url("img/image3.png");
 background-position: center, 0 0;
 background-repeat: no-repeat;
@@ -137,28 +281,32 @@ li:nth-child(3).feature-item,
 li:nth-child(4).feature-item,
 li:last-child.feature-item {
   background-color: var(--basic-neutral);
+  color: var(--basic-extra-black);
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .benefits {
-  font-size: 21px;
+  background-color: var(--basic-white);
+  color: var(--basic-extra-black);
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .benefits h3 {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  font-family: "PT Sans", Aerial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-}
-
-/* Backgrounds */
-
-.slogan {
-  background-color: var(--basic-extra-blue);
-  color: var(--basic-white);
-  background-image: url("img/image1.png");
-  background-position: center, 0 0;
-  background-repeat: no-repeat;
-  background-size: 1200px 509px;
+  text-align: center;
 }
 
 /* .inner-page {
@@ -169,7 +317,9 @@ li:last-child.feature-item {
 /* Button */
 
 .button {
-  font: inherit;
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
   text-align: center;
   color: var(--basic-white);
@@ -218,7 +368,13 @@ li:last-child.feature-item {
 /* Contacts */
 
 .footer-contacts-phone {
+  background-color: var(--basic-extra-white);
   color: var(--basic-black);
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
 }
 
 /* Main footer */
@@ -282,22 +438,34 @@ li:last-child.feature-item {
 
 /* Other */
 
-.description,
-.caption,
-.footer-contacts-phone {
+.caption {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  font-family: "PT Sans", Aerial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
 }
 
 .lead {
+  background-color: var(--basic-white);
+  color: var(--basic-extra-black);
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
   line-height: 24px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .lead h3 {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  font-family: "PT Sans", Aerial, sans-serif;
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -307,6 +475,8 @@ li:last-child.feature-item {
   height: 1px;
   margin: -1px;
 }
+
+/* Inner */
 
 .inner-page {
   color: var(--basic-black);

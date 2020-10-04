@@ -36,16 +36,18 @@
 
 <main class="container">
   <h1 class="visually-hidden">Городок Седона, штат Аризона</h1>
-  <div class="slogan">
-    <p>Welcome</p>
-    <p>&mdash; to the gorgeous &mdash;</p>
-    <p>Sedona</p>
-    <p><q>Because the Grand Canyon sucks!</q></p>
+  <div class="main-background">
+    <img src="great_view.png" width="1200" height="509" alt="Canyon">
+    <div class="slogan">
+      <img src="welcome.png" width="457" height="351" alt="Welcome">
   </div>
+</div>
+<div class="headline-wrapper">
   <div class="headline">
-  <p class="description">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-  </div>
-  <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+  <h3 class="subtitle">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+  <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+</div>
+</div>
 
 <section class="features">
   <h2 class="visually-hidden">Преимущества</h2>
@@ -54,7 +56,7 @@
         <h3>Настоящий городок</h3>
         <p>— №1 —</p>
         <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-        <img src="Image2.png" width="800" height="256" alt="Седона">
+        <img class="photo-1" src="Image2.png" width="800" height="256" alt="Седона">
       </li>
       <li class="feature-item">
         <h3>Там есть Мост дьявола</h3>
@@ -83,24 +85,24 @@
     </li>
   </ul>
 
-  <aside class="benefits">
-    <h3>Жильё</h3>
-    <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-    <h3>Еда</h3>
-    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-    <h3>Сувениры</h3>
-    <p>Не только китайского, но и местного
+  <section class="benefits">
+    <h3 class="special">Жильё</h3>
+    <p class="rec">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+    <h3 class="special">Еда</h3>
+    <p class="rec">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+    <h3 class="special">Сувениры</h3>
+    <p class="rec">Не только китайского, но и местного
   производства!</p>
-  </aside>
+</section>
 </section>
 
-<aside class="lead">
-  <h3>Заинтересовались?</h3>
-  <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-</aside>
+<section class="lead">
+  <h3 class="lead-1">Заинтересовались?</h3>
+  <p class="lead-2">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+</section>
 
   <div class="modal modal-booking">
-    <a class="button button-hotels" type="button">ПОИСК ГОСТИНИЦЫ в Седоне</a>
+    <a class="button button-hotels" href="#">ПОИСК ГОСТИНИЦЫ в Седоне</a>
     <p class="booking-info modal-info">Выберите даты</p>
       <!-- Здесь будет форма бронирования -->
       <button class="button" type="button">Найти</button>
