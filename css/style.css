@@ -11,6 +11,7 @@
 --basic-neutral: #eeeeee;
 --basic-extra-neutral: #BDBBBC;
 --basic-gray: #666666;
+--basic-extra-gray: #e5e5e5;
 --basic-brown: #766357;
 --basic-extra-brown: #766458;
 --basic-chocolate: #604E43;
@@ -51,12 +52,13 @@ body {
 /* Main header */
 
 .inner-page .main-header {
-  width: 1200px;
-  height: 70px;
   margin: 0;
-  padding: 72px 15px;
+  padding: 0;
   font-family: "PT Sans", Aerial, sans-serif;
   color: var(--basic-black);
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
   background-color: var(--basic-white);
   text-align: center;
 }
@@ -329,24 +331,45 @@ li:last-child.feature-item {
   border: none;
 }
 
-.button:hover {
+.button-search {
+  width: 458px;
+  height: 58px;
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+.button-details:hover,
+.button-search:hover {
   background-color: var(--basic-ultra-blue);
 }
 
-.button:active {
+.button-details:active,
+.button-search:active {
   background-color: var(--basic-mare);
   border: none;
 }
 
-.button.disabled,
-.button:disabled {
+.button-search.disabled,
+.button-search:disabled {
   cursor: default;
   opacity: 0.5;
   background-color: var(--special);
 }
 
 .button-hotels {
-  font: inherit;
+  width: 568px;
+  height: 86px;
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
   text-align: center;
   color: var(--basic-white);
@@ -356,25 +379,45 @@ li:last-child.feature-item {
   border: none;
 }
 
+.button-book:hover,
 .button-hotels:hover {
   background-color: var(--basic-chocolate);
 }
 
+.button-book:active,
 .button-hotels:active {
   background-color: var(--basic-extra-chocolate);
   border: none;
 }
 
-/* Contacts */
-
-.footer-contacts-phone {
-  background-color: var(--basic-extra-white);
-  color: var(--basic-black);
+.button-details {
+  width: 110px;
+  height: 27px;
   font-family: "PT Sans", Aerial, sans-serif;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 700;
   text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+.button-book {
+  width: 142px;
+  height: 27px;
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-brown);
+  border: none;
 }
 
 /* Main footer */
@@ -397,6 +440,20 @@ li:last-child.feature-item {
 .icons {
   list-style: none;
 }
+
+/* Contacts */
+
+.footer-contacts-phone {
+  background-color: var(--basic-extra-white);
+  color: var(--basic-black);
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
 
 /* Social button */
 
@@ -428,12 +485,6 @@ li:last-child.feature-item {
 
 .modal-booking {
   ...
-}
-
-.button-hotels a {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
 }
 
 /* Other */
@@ -478,8 +529,91 @@ li:last-child.feature-item {
 
 /* Inner */
 
-.inner-page {
+.inner-header {
+  margin: 0;
+  padding: 72px 15px;
+  font-family: "PT Sans", Aerial, sans-serif;
   color: var(--basic-black);
-  background-color: var(--white);
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700px;
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.filter {
+  height: 217px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--basic-extra-blue);
+  color: var(--basic-white);
+  background-image: url("Image5.png");
+  background-position: center, 0 0;
+  background-repeat: no-repeat;
+  background-size: 1200px 217px;
+}
+
+.results-list {
+  list-style: none;
+}
+
+.hotel-alternate {
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  background-image: url("amara.png");
+  background-position: center, 0 0;
+  background-repeat: no-repeat;
+  background-size: 135px 90px;
+}
+
+.name {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
+  text-align: center;
+}
+
+.type {
+  background-color: var(--basic-white);
+  color: var(--basic-extra-black);
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.rate {
+  width: 110px;
+  height: 27px;
+  margin: 0 1032px;
+  font-family: "PT Sans", Aerial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--basic-light);
+  color: var(--basic-gray);
+}
+
+/* Page Footer */
+
+.page-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-extra-white);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
