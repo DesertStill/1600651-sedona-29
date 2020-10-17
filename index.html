@@ -12,38 +12,46 @@
 
   <body class="page-body">
 
+
 <header class="main-header">
-  <div class="logo-wrapper">
-  <a class="main-header-logo">
-  <img src="img/logo.svg" width="138" height="70" alt="logo">
-</a>
-</div>
 
   <nav class="main-navigation">
-    <div class="main-navigation-wrapper">
-      <div class="container">
+    <a class="main-header-logo">
+    <img src="img/logo.svg" width="138" height="70" alt="logo">
+  </a>
+
+<!--
+  <div class="main-navigation-wrapper">
+  -->
     <ul class="site-navigation">
-      <li><a class="user-nav" href="blank.html">Информация</a></li>
-      <li><a class="user-nav" href="blank.html">Фото и видео</a></li>
-      <li><a class="user-nav" href="blank.html">Карта штата</a></li>
-      <li><a class="user-nav" href="hotels.html">Гостиницы</a></li>
+      <li><a class="user-nav user-nav-1" href="blank.html">Информация</a></li>
+      <li><a class="user-nav user-nav-2" href="blank.html">Фото и видео</a></li>
+      <li><a class="user-nav user-nav-3" href="blank.html">Карта штата</a></li>
+      <li><a class="user-nav user-nav-4" href="hotels.html">Гостиницы</a></li>
     </ul>
-  </div>
-</div>
+  <!--
+</div> -->
+
   </nav>
 
 </header>
 
 <main class="container">
+
   <h1 class="visually-hidden">Городок Седона, штат Аризона</h1>
+
+  <div class="grid-container-1">
+
   <div class="main-background">
     <img src="img/great_view.jpg" width="1200" height="509" alt="Canyon">
-<!--
-    <div class="slogan">
-<img src="img/welcome.svg" width="457" height="351" alt="Welcome">
-  </div>
--->
 </div>
+
+  <div class="slogan">
+    <img src="img/welcome.svg" width="457" height="351" alt="Welcome">
+</div>
+
+</div>
+
 <div class="headline-wrapper">
   <div class="headline">
   <h3 class="subtitle">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
@@ -53,48 +61,60 @@
 
 <section class="features">
   <h2 class="visually-hidden">Преимущества</h2>
+
   <ul class="features-list">
-      <li class="feature-item">
-        <h3>Настоящий городок</h3>
+      <li class="feature-item feature-item-1">
+        <div class="content-1">
+        <h3 class="h3-1">Настоящий городок</h3>
         <p>— №1 —</p>
-        <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        <p class="p-1">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+      </div>
+
         <img class="photo-1" src="img/town.jpg" width="800" height="256" alt="Седона">
       </li>
-      <li class="feature-item">
-        <h3>Там есть Мост дьявола</h3>
+      <li class="feature-item feature-item-2">
+        <div class="content-2">
+        <h3 class="h3-2">Там есть Мост дьявола</h3>
         <p>— №2 —</p>
-        <p>Да, по нему можно пройти! Если конечно
+        <p class="p-2">Да, по нему можно пройти! Если конечно
 вы осмелитесь</p>
-<img src="img/Image3.jpg" width="800" height="256" alt="Мост Дьявола">
+</div>
+<img class="photo-2" src="img/Image3.jpg" width="800" height="256" alt="Мост Дьявола">
 </li>
-<li class="feature-item">
-  <h3>Небольшая площадь</h3>
+<li class="feature-item feature-item-3">
+  <h3 class="h3-3">Небольшая площадь</h3>
 <p>— №3 —</p>
-<p>Все достопримечательности
+<p class="p-3">Все достопримечательности
 находятся очень близко</p>
 </li>
-<li class="feature-item">
-      <h3>Красивая дорога</h3>
+<li class="feature-item feature-item-4">
+      <h3 class="h3-4">Красивая дорога</h3>
 <p>— №4 —</p>
-<p>Ехать в Седону из Лас-Вегаса совсем
+<p class="p-4">Ехать в Седону из Лас-Вегаса совсем
 не скучно!</p>
     </li>
-    <li class="feature-item">
-      <h3>Мало туристов</h3>
+    <li class="feature-item feature-item-5">
+      <h3 class="h3-5">Мало туристов</h3>
 <p>— №5 —</p>
-<p>Большинство едет в Гранд Каньон
+<p class="p-5">Большинство едет в Гранд Каньон
 и толпится там</p>
     </li>
   </ul>
 
   <section class="benefits">
+    <div class="b-1">
     <h3 class="special">Жильё</h3>
     <p class="rec">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+  </div>
+  <div class="b-2">
     <h3 class="special">Еда</h3>
     <p class="rec">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+  </div>
+  <div class="b-3">
     <h3 class="special">Сувениры</h3>
     <p class="rec">Не только китайского, но и местного
   производства!</p>
+</div>
 </section>
 </section>
 
@@ -118,6 +138,7 @@
 </main>
 
 <footer class="page-footer main-footer">
+  <div class="container">
 
 <section class="footer-contacts">
   <h2 class="visually-hidden">Контакты</h2>
@@ -150,9 +171,10 @@
 
 <section class="footer-copyright">
   <h2 class="visually-hidden">Копирайт</h2>
-    Website by:
+    <p class="website">Website by:</p>
     <a class="copy" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
   </section>
+</div>
 
 </footer>
 
