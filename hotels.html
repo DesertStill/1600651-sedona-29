@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Отели Седоны</title>
@@ -10,23 +10,21 @@
 
   <body class="page-body inner-page">
 
-<header class="main-header inner-header">
-  <div class="logo-wrapper">
-  <a class="main-header-logo" href="index.html">
-  <img src="img/logo.svg" width="138" height="70" alt="logo">
-</a>
-</div>
-
+<header class="main-header">
   <nav class="main-navigation">
-    <div class="main-navigation-wrapper">
-      <div class="container">
+    <a class="main-header-logo" href="index.html">
+    <img src="img/logo.svg" width="138" height="70" alt="logo">
+  </a>
+
+  <div class="main-navigation-wrapper">
+
     <ul class="site-navigation">
-      <li><a class="user-nav" href="blank.html">Информация</a></li>
-      <li><a class="user-nav" href="blank.html">Фото и видео</a></li>
-      <li><a class="user-nav" href="blank.html">Карта штата</a></li>
-      <li><a class="user-nav" href="blank.html">Гостиницы</a></li>
+      <li><a class="user-nav user-nav-1" href="blank.html">Информация</a></li>
+      <li><a class="user-nav user-nav-2" href="blank.html">Фото и видео</a></li>
+      <li><a class="user-nav user-nav-3" href="blank.html">Карта штата</a></li>
+      <li><a class="user-nav user-nav-4" href="blank.html" disabled>Гостиницы</a></li>
     </ul>
-  </div>
+
 </div>
   </nav>
 
@@ -50,37 +48,54 @@
 <!-- Здесь будет таблица -->
     <ul class="results-list">
       <li class="result">
+        <a class="image" href="blank.html">
         <img class="hotel-alternate" src="img/amara.jpg" width="135" height="90" alt="Amara">
-        <a href="blank.html">
-          <h3 class="name">Amara resort & SPA</h3>
+      </a>
+      <div class="misc">
+        <a class="naming" href="blank.html">
+          <h3 class="name name-1">Amara resort & SPA</h3>
         </a>
-        <p class="type">Гостиница от 4000р.</p>
+        <p class="type"><span class="type-1">Гостиница</span> <span class="type-1">от 4000р.</span></p>
         <p class="rate">Рейтинг: 8,5</p>
-        <p>
-          <button class="button button-details" type="button">Подробнее</button> <button class="button button-book" type="button">Забронировать</button>
+        <p class="buttons">
+          <button class="button button-details" type="button">Подробнее</button>
+          <button class="button button-book" type="button">Забронировать</button>
         </p>
+      </div>
       </li>
+
       <li class="result">
+        <a class="image" href="blank.html">
         <img class="hotel-alternate" src="img/dqimg.jpg" width="135" height="90" alt="Desert Quail Inn">
+      </a>
+      <div class="misc">
         <a href="blank.html">
           <h3 class="name">Desert Quail Inn</h3>
         </a>
-        <p class="type">Мотель от 3000р.</p>
+        <p class="type"><span class="type-2">Мотель</span> <span class="type-2">от 3000р.</span></p>
         <p class="rate">Рейтинг: 8,9</p>
-        <p>
-          <button class="button button-details" type="button">Подробнее</button> <button class="button button-book" type="button">Забронировать</button>
+        <p class="buttons">
+          <button class="button button-details" type="button">Подробнее</button>
+          <button class="button button-book" type="button">Забронировать</button>
         </p>
+      </div>
       </li>
+
       <li class="result">
+        <a class="image" href="blank.html">
         <img class="hotel-alternate" src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+      </a>
+      <div class="misc">
         <a href="blank.html">
           <h3 class="name">Villas at Poco Diablo</h3>
         </a>
-        <p class="type">Апартаменты от 2000р.</p>
+        <p class="type"><span class="type-3">Апартаменты</span> <span class="type-3">от 2000р.</span></p>
         <p class="rate">Рейтинг: 9,2</p>
-        <p>
-          <button class="button button-details" type="button">Подробнее</button> <button class="button button-book" type="button">Забронировать</button>
+        <p class="buttons">
+          <button class="button button-details" type="button">Подробнее</button>
+          <button class="button button-book" type="button">Забронировать</button>
         </p>
+      </div>
       </li>
       </ul>
   </section>

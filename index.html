@@ -20,17 +20,17 @@
     <img src="img/logo.svg" width="138" height="70" alt="logo">
   </a>
 
-<!--
+
   <div class="main-navigation-wrapper">
-  -->
+
     <ul class="site-navigation">
       <li><a class="user-nav user-nav-1" href="blank.html">Информация</a></li>
       <li><a class="user-nav user-nav-2" href="blank.html">Фото и видео</a></li>
       <li><a class="user-nav user-nav-3" href="blank.html">Карта штата</a></li>
       <li><a class="user-nav user-nav-4" href="hotels.html">Гостиницы</a></li>
     </ul>
-  <!--
-</div> -->
+
+</div>
 
   </nav>
 
@@ -38,8 +38,10 @@
 
 <main class="container">
 
+
   <h1 class="visually-hidden">Городок Седона, штат Аризона</h1>
 
+<div class="grid-container-2">
   <div class="grid-container-1">
 
   <div class="main-background">
@@ -50,14 +52,19 @@
     <img src="img/welcome.svg" width="457" height="351" alt="Welcome">
 </div>
 
+<div class="mask">
+  <img src="img/Shape2.svg" width="1200" height="57" alt="">
 </div>
 
-<div class="headline-wrapper">
-  <div class="headline">
-  <h3 class="subtitle">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
-  <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 </div>
+
+<div class="headline">
+<h3 class="subtitle">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+<p class="description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 </div>
+
+</div>
+
 
 <section class="features">
   <h2 class="visually-hidden">Преимущества</h2>
@@ -99,36 +106,36 @@
 <p class="p-5">Большинство едет в Гранд Каньон
 и толпится там</p>
     </li>
-  </ul>
 
-  <section class="benefits">
-    <div class="b-1">
-    <h3 class="special">Жильё</h3>
+
+  <li class="b-1">
+    <img class="icon-1" src="img/icon-1.svg" width="75" height="72" alt="">
+    <h3 class="special special-1">Жильё</h3>
     <p class="rec">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-  </div>
-  <div class="b-2">
-    <h3 class="special">Еда</h3>
+  </li>
+  <li class="b-2">
+    <img class="icon-2" src="img/icon-2.svg" width="74" alt="">
+    <h3 class="special special-2">Еда</h3>
     <p class="rec">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-  </div>
-  <div class="b-3">
-    <h3 class="special">Сувениры</h3>
+  </li>
+  <li class="b-3">
+    <img class="icon-3" src="img/icon-3.svg" width="64" height="76" alt="">
+    <h3 class="special special-3">Сувениры</h3>
     <p class="rec">Не только китайского, но и местного
   производства!</p>
-</div>
+</li>
+</ul>
 </section>
-</section>
+
 
 <section class="lead">
   <h3 class="lead-1">Заинтересовались?</h3>
   <p class="lead-2">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 </section>
 
-  <div class="modal modal-booking">
-    <button class="button button-hotels">ПОИСК ГОСТИНИЦЫ в Седоне</button>
-    <p class="booking-info modal-info">Выберите даты</p>
-      <!-- Здесь будет форма бронирования -->
-      <button class="button button-search" type="button">Найти</button>
-  </div>
+<button class="button button-hotels" href="booking.html">ПОИСК ГОСТИНИЦЫ в Седоне</button>
+
+
 
 <section class="location">
   <h2 class="visually-hidden">Расположение</h2>
@@ -152,17 +159,18 @@
   <h2 class="visually-hidden">Соцсети</h2>
   <ul class="icons">
     <li>
-        <a class="social-button" href="#">
+        <a class="social-button social-button-1" href="#">
           <span class="visually-hidden">Твиттер</span>
+          <img></img>
         </a>
       </li>
       <li>
-        <a class="social-button" href="#">
+        <a class="social-button social-button-2" href="#">
           <span class="visually-hidden">Фейсбук</span>
         </a>
       </li>
       <li>
-        <a class="social-button" href="#">
+        <a class="social-button social-button-3" href="#">
           <span class="visually-hidden">YouTube</span>
         </a>
       </li>
@@ -177,6 +185,44 @@
 </div>
 
 </footer>
+
+<section class="modal modal-booking">
+  <h2 class="visually-hidden">Выберите даты</h2>
+
+
+
+  <p class="booking-info modal-info"></p>
+  <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="booking-item booking-item-0">
+        <label for="arrival-date">Дата заезда</label>
+        <input id="arrival-date" type="date" data-date="" data-date-format="DD MMMM YYYY" name="date" value="24 апреля 2017">
+
+      </div>
+
+      <p class="booking-item booking-item-1">
+          <label for="departure-date">Дата выезда</label>
+          <input id="departure-date" type="date" name="date">
+          </p>
+
+          <p class="booking-item booking-item-2">
+            <label for="amount-1">Взрослые</label>
+            <input id="amount-1" type="number" min="0" name="amount">
+            </p>
+
+          <p class="booking-item booking-item-3">
+              <label for="amount-2">Дети</label>
+              <input class="toast" id="amount-2" type="number" min="0" name="amount">
+            </p>
+
+
+
+
+
+    <button class="button button-search modal-close" type="submit">Найти</button>
+  </form>
+</section>
+
+<script src="js/booking.js"></script>
 
   </body>
 </html>
