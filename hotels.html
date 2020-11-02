@@ -10,6 +10,8 @@
 
   <body class="page-body inner-page">
 
+    <div class="shadow">
+
 <header class="main-header">
   <nav class="main-navigation">
     <a class="main-header-logo" href="index.html">
@@ -19,35 +21,129 @@
   <div class="main-navigation-wrapper">
 
     <ul class="site-navigation">
-      <li><a class="user-nav user-nav-1" href="blank.html">Информация</a></li>
-      <li><a class="user-nav user-nav-2" href="blank.html">Фото и видео</a></li>
-      <li><a class="user-nav user-nav-3" href="blank.html">Карта штата</a></li>
-      <li><a class="user-nav user-nav-4" href="blank.html" disabled>Гостиницы</a></li>
+      <li><a href="blank.html">Информация</a></li>
+      <li><a href="blank.html">Фото и видео</a></li>
+      <li><a href="blank.html">Карта штата</a></li>
+      <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
     </ul>
 
-</div>
-  </nav>
+ </div>
 
+  </nav>
 </header>
 
 <main class="container">
 
-  <h1 class="visually-hidden">Отели</h1>
+  <h1 class="visually-hidden">отели</h1>
 
-  <div class="form-1">
-    <section class="filter">
-      <img src="img/background.jpg" width="1200" height="217" alt="nature">
-    <h2 class="visually-hidden">Фильтр жилья</h2>
-    <!-- Здесь будет форма фильтра -->
+    <section class="filters">
+      <h2 class="visually-hidden">фильтр жилья</h2>
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filter-item">
+          <div>
+
+            <!--в данной форме элемент div оборачивает элемент legend по причине того, что в Google Chrome сетка строится неправильно, не удаётся добиться идентичности с отображением в Firefox, элемент не реагирует на отступы и автопрефиксеры не исправляют ситуацию, с удовольствием приму замечания на этот счёт-->
+
+        <legend class="legend">инфраструктура:</legend>
+        <ul>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" checked>
+            <label for="filter-pool" class="pool">бассейн</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
+            <label for="filter-parking">парковка</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
+            <label for="filter-wi-fi" class="wi-fi">wi-fi</label>
+          </li>
+        </ul>
+      </div>
+    </fieldset>
+    <fieldset class="filter-item">
+      <div>
+
+        <!--в данной форме элемент div оборачивает элемент legend по причине того, что в Google Chrome сетка строится неправильно, не удаётся добиться идентичности с отображением в Firefox, элемент не реагирует на отступы и автопрефиксеры не исправляют ситуацию-->
+
+      <legend class="legend">тип жилья:</legend>
+      <ul>
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+          <label for="filter-hotel" class="hotel">гостиница</label>
+        </li>
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel" checked>
+          <label for="filter-motel" class="motel">мотель</label>
+        </li>
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="suite" id="filter-suite" checked>
+          <label for="filter-suite" class="suite">апартаменты</label>
+        </li>
+      </ul>
+    </div>
+  </fieldset>
+  <fieldset class="filter-item">
+    <div>
+
+      <!--в данной форме элемент div оборачивает элемент legend по причине того, что в Google Chrome сетка строится неправильно, не удаётся добиться идентичности с отображением в Firefox, элемент не реагирует на отступы и автопрефиксеры не исправляют ситуацию-->
+
+    <legend class="legend">стоимость в сутки (р):</legend>
+    <div class="range-filter">
+          <div class="price-controls">
+            <label class="min-price">
+               от
+               <input type="text" name="min-price" value="0">
+            </label>
+            <label class="max-price">
+                           до
+                           <input type="text" name="max-price" value="3000">
+                        </label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
+          </div>
+        </div>
+        <button type="submit" class="filter-button button">показать</button>
+      </div>
+      </fieldset>
+   </form>
   </section>
+
+<section class="hotels-catalogue">
+  <h2 class="visually-hidden">Результаты поиска</h2>
+  <div class="output">
+    <div class="found">
+      Найдено: 3
+    </div>
+
+    <div class="table">
+    <div class="sort">
+      Сортировка:
+    </div>
+    <ul class="sort-list">
+      <li class="sort-item current-sort">
+        <a href="#">По цене</a>
+    </li>
+    <li class="sort-item">
+      <a href="#">По типу</a>
+  </li>
+  <li class="sort-item">
+    <a href="#">По рейтингу</a>
+</li>
+</ul>
+
+</div>
 </div>
 
-<section class="hotels">
+  <div class="hotels">
     <h2 class="visually-hidden">Список отелей</h2>
-
-<!-- Здесь будет таблица -->
-    <ul class="results-list">
-      <li class="result">
+<ul class="results-list">
+      <li class="result-item">
         <a class="image" href="blank.html">
         <img class="hotel-alternate" src="img/amara.jpg" width="135" height="90" alt="Amara">
       </a>
@@ -56,32 +152,30 @@
           <h3 class="name name-1">Amara resort & SPA</h3>
         </a>
         <p class="type"><span class="type-1">Гостиница</span> <span class="type-1">от 4000р.</span></p>
-        <p class="rate">Рейтинг: 8,5</p>
+        <p class="rating">Рейтинг: 8,5</p>
         <p class="buttons">
-          <button class="button button-details" type="button">Подробнее</button>
-          <button class="button button-book" type="button">Забронировать</button>
+          <a class="button button-details" href="#">Подробнее</a>
+          <button class="button button-book" type="submit">Забронировать</button>
         </p>
       </div>
-      </li>
-
-      <li class="result">
+    </li>
+      <li class="result-item">
         <a class="image" href="blank.html">
         <img class="hotel-alternate" src="img/dqimg.jpg" width="135" height="90" alt="Desert Quail Inn">
       </a>
-      <div class="misc">
+      <div class="result-content">
         <a href="blank.html">
           <h3 class="name">Desert Quail Inn</h3>
         </a>
         <p class="type"><span class="type-2">Мотель</span> <span class="type-2">от 3000р.</span></p>
-        <p class="rate">Рейтинг: 8,9</p>
+        <p class="rating">Рейтинг: 8,9</p>
         <p class="buttons">
-          <button class="button button-details" type="button">Подробнее</button>
-          <button class="button button-book" type="button">Забронировать</button>
+          <a class="button button-details" href="#">Подробнее</a>
+          <button class="button button-book" type="submit">Забронировать</button>
         </p>
       </div>
-      </li>
-
-      <li class="result">
+    </li>
+      <li class="result-item">
         <a class="image" href="blank.html">
         <img class="hotel-alternate" src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
       </a>
@@ -90,56 +184,55 @@
           <h3 class="name">Villas at Poco Diablo</h3>
         </a>
         <p class="type"><span class="type-3">Апартаменты</span> <span class="type-3">от 2000р.</span></p>
-        <p class="rate">Рейтинг: 9,2</p>
+        <p class="rating">Рейтинг: 9,2</p>
         <p class="buttons">
-          <button class="button button-details" type="button">Подробнее</button>
-          <button class="button button-book" type="button">Забронировать</button>
+          <a class="button button-details" href="#">Подробнее</a>
+          <button class="button button-book" type="submit">Забронировать</button>
         </p>
       </div>
-      </li>
-      </ul>
-  </section>
-
+    </li>
+  </ul>
+</div>
+</section>
 </main>
 
 <footer class="page-footer">
-
-  <section class="footer-contacts">
+  <div class="container">
+<section class="footer-contacts">
     <h2 class="visually-hidden">Контакты</h2>
     <p class="caption">#visitSEDONA</p>
     <p class="footer-contacts-phone">Тел:
-      <a class="footer-contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
+      <a class="contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
       </p>
   </section>
-
   <section class="footer-socials">
     <h2 class="visually-hidden">Соцсети</h2>
     <ul class="icons">
       <li>
-          <a class="social-button" href="#">
+          <a class="social-button twitter" href="#">
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
         <li>
-          <a class="social-button" href="#">
+          <a class="social-button facebook" href="#">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
         <li>
-          <a class="social-button" href="#">
+          <a class="social-button youtube" href="#">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
     </ul>
   </section>
-
   <section class="footer-copyright">
     <h2 class="visually-hidden">Копирайт</h2>
-      Website by:
-      <a class="copy" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+      <p class="website">Website&nbsp;by</p>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"></a>
     </section>
-
+</div>
 </footer>
+</div>
 
   </body>
 </html>

@@ -1,9 +1,18 @@
-const link = document.querySelector('.button-hotels');
-const popup = document.querySelector('.modal-booking');
-const form = document.querySelector('form');
+const bookingLink = document.querySelector(".button-hotels");
+const bookingPopup = document.querySelector(".modal-booking");
+const bookingClose = bookingPopup.querySelector(".modal-close");
+const bookingForm = bookingPopup.querySelector(".booking-form");
 
-
-form.addEventListener("click", function (evt) {
+bookingLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  console.log(form.classList.add('modal-show'));
+  bookingPopup.classList.add("modal-show");
+});
+
+bookingClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  bookingPopup.classList.remove("modal-show");
+});
+
+bookingForm.addEventListener("submit", function (evt) {
+    evt.preventDefault();
 });
