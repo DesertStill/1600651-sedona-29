@@ -498,7 +498,7 @@ div:nth-of-type(2).feature-item {
   font-weight: 400;
   text-align: center;
   background-color: var(--basic-blue);
-  background-image: url("../img/image3.jpg");
+  background-image: url("../img/image-3.jpg");
   background-position: left, center;
   background-repeat: no-repeat;
   background-size: 800px 256px;
