@@ -1331,7 +1331,7 @@ div:nth-of-type(4).booking-item input {
 
 .booking-item .add-button-adult {
   left:187px;
-  background-image: url("../img/union-default.svg");
+  background-image: url("../img/union-def.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   outline: none;
@@ -1360,7 +1360,7 @@ div:nth-of-type(4).booking-item input {
 
 .booking-item .add-button-child {
   left:142px;
-  background-image: url("../img/union-default.svg");
+  background-image: url("../img/union-def.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   outline: none;
