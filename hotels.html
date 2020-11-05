@@ -12,227 +12,247 @@
 
     <div class="shadow-box">
 
-<header class="main-header">
-  <nav class="main-navigation">
-    <a class="main-header-logo" href="index.html">
-    <img src="img/logo.svg" width="138" height="70" alt="logo">
-  </a>
+      <header class="main-header">
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/logo.svg" width="138" height="70" alt="logo">
+          </a>
+          <div class="main-navigation-wrapper">
+            <ul class="site-navigation">
+              <li class="item-menu"><a href="blank.html">Информация</a></li>
+              <li class="item-menu"><a href="blank.html">Фото и видео</a></li>
+              <li class="item-menu"><a href="blank.html">Карта штата</a></li>
+              <li class="item-menu site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-  <div class="main-navigation-wrapper">
-
-    <ul class="site-navigation">
-      <li><a href="blank.html">Информация</a></li>
-      <li><a href="blank.html">Фото и видео</a></li>
-      <li><a href="blank.html">Карта штата</a></li>
-      <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
-    </ul>
-
- </div>
-
-  </nav>
-</header>
-
-<main class="container">
-
-  <h1 class="visually-hidden">отели</h1>
-
-    <section class="filters">
-      <h2 class="visually-hidden">фильтр жилья</h2>
-      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="filter-item">
-          <div>
-
-            <!--в данной форме элемент div оборачивает элемент legend по причине того, что в Google Chrome сетка строится неправильно, не удаётся добиться идентичности с отображением в Firefox, элемент не реагирует на отступы и автопрефиксеры не исправляют ситуацию, с удовольствием приму замечания на этот счёт-->
-
-        <legend class="legend">инфраструктура:</legend>
-        <ul>
-          <li class="filter-option filter-checkbox">
-            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" checked>
-            <label for="filter-pool" class="pool">бассейн</label>
-          </li>
-          <li class="filter-option filter-checkbox">
-            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
-            <label for="filter-parking">парковка</label>
-          </li>
-          <li class="filter-option filter-checkbox">
-            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
-            <label for="filter-wi-fi" class="wi-fi">wi-fi</label>
-          </li>
-        </ul>
-      </div>
-    </fieldset>
-    <fieldset class="filter-item">
-      <div>
-
-        <!--в данной форме элемент div оборачивает элемент legend по причине того, что в Google Chrome сетка строится неправильно, не удаётся добиться идентичности с отображением в Firefox, элемент не реагирует на отступы и автопрефиксеры не исправляют ситуацию-->
-
-      <legend class="legend">тип жилья:</legend>
-      <ul>
-        <li class="filter-option filter-checkbox">
-          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
-          <label for="filter-hotel" class="hotel">гостиница</label>
-        </li>
-        <li class="filter-option filter-checkbox">
-          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel" checked>
-          <label for="filter-motel" class="motel">мотель</label>
-        </li>
-        <li class="filter-option filter-checkbox">
-          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="suite" id="filter-suite" checked>
-          <label for="filter-suite" class="suite">апартаменты</label>
-        </li>
-      </ul>
-    </div>
-  </fieldset>
-  <fieldset class="filter-item">
-    <div>
-
-      <!--в данной форме элемент div оборачивает элемент legend по причине того, что в Google Chrome сетка строится неправильно, не удаётся добиться идентичности с отображением в Firefox, элемент не реагирует на отступы и автопрефиксеры не исправляют ситуацию-->
-
-    <legend class="legend">стоимость в сутки (р):</legend>
-    <div class="range-filter">
-          <div class="price-controls">
-            <label class="min-price">
-               от
+      <main class="container">
+        <h1 class="visually-hidden">отели</h1>
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтр жилья</h2>
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter-item">
+              <h3 class="type-set">инфраструктура:</h3>
+              <ul class="filter-list">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" aria-label="Выбрать" checked>
+                  <label for="filter-pool" class="pool">бассейн</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking" aria-label="Выбрать">
+                  <label for="filter-parking" class="parking">парковка</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wi-fi" id="filter-wi-fi" aria-label="Выбрать">
+                  <label for="filter-wi-fi" class="wi-fi">wi-fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-item">
+              <h3 class="type-set">тип жилья:</h3>
+              <ul class="filter-list">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel" aria-label="Выбрать" checked>
+                  <label for="filter-hotel" class="hotel">гостиница</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel" aria-label="Выбрать" checked>
+                  <label for="filter-motel" class="motel">мотель</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="suite" id="filter-suite" aria-label="Выбрать" checked>
+                  <label for="filter-suite" class="suite">апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-item">
+              <h3 class="price">стоимость в сутки (р):</h3>
+              <div class="range-filter">
+                <div class="price-controls">
+                  <label class="min-price">от
                <input type="text" name="min-price" value="0">
             </label>
-            <label class="max-price">
-                           до
-                           <input type="text" name="max-price" value="3000">
-                        </label>
+            <label class="max-price">до
+              <input type="text" name="max-price" value="3000">
+            </label>
           </div>
           <div class="range-controls">
             <div class="scale">
-              <div class="bar"></div>
+              <div class="bar">
+              </div>
             </div>
-            <div class="toggle toggle-min" tabindex="0"></div>
-            <div class="toggle toggle-max" tabindex="0"></div>
+            <div class="toggle toggle-min" tabindex="0" aria-label="Ползунок минимальной цены">
+            </div>
+            <div class="toggle toggle-max" tabindex="0" aria-label="Ползунок максимальной цены">
+            </div>
           </div>
         </div>
-        <button type="submit" class="filter-button button">показать</button>
-      </div>
+        <button type="submit" class="filter-button button" aria-label="Показать подходящие варианты жилья">Показать</button>
       </fieldset>
    </form>
   </section>
-
-<section class="hotels-catalogue">
-  <h2 class="visually-hidden">Результаты поиска</h2>
-  <div class="output">
-    <div class="found">
-      Найдено: 3
+  <section class="hotels-catalogue">
+    <h2 class="visually-hidden">Результаты поиска</h2>
+    <div class="output">
+      <div class="found">
+        Найдено: 3
+      </div>
+      <div class="table">
+        <div class="sort">
+          Сортировка:
+        </div>
+        <ul class="sort-list">
+          <li class="sort-item current-sort">
+            <a href="#">По цене</a>
+          </li>
+          <li class="sort-item">
+            <a href="#">По типу</a>
+          </li>
+          <li class="sort-item">
+            <a href="#">По рейтингу</a>
+          </li>
+        </ul>
+      </div>
+      <div class="rotation">
+        <a href="#" class="sorting-wheel" aria-label="Сортировка по возрастанию цены">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+          </svg>
+        </a>
+        <a href="#" class="sorting-wheel current-direction" aria-label="Сортировка по убыванию цены">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA"/>
+          </svg>
+        </a>
+      </div>
     </div>
-
-    <div class="table">
-    <div class="sort">
-      Сортировка:
-    </div>
-    <ul class="sort-list">
-      <li class="sort-item current-sort">
-        <a href="#">По цене</a>
-    </li>
-    <li class="sort-item">
-      <a href="#">По типу</a>
-  </li>
-  <li class="sort-item">
-    <a href="#">По рейтингу</a>
-</li>
-</ul>
-
-</div>
-</div>
-
-  <div class="hotels">
-    <h2 class="visually-hidden">Список отелей</h2>
-<ul class="results-list">
-      <li class="result-item">
-        <a class="image" href="blank.html">
-        <img class="hotel-alternate" src="img/amara.jpg" width="135" height="90" alt="Amara">
-      </a>
-      <div class="result-content">
-        <a class="naming" href="blank.html">
-          <h3 class="name name-1">Amara resort & SPA</h3>
-        </a>
-        <p class="type"><span class="type-1">Гостиница</span> <span class="type-1">от 4000р.</span></p>
-        <p class="rating">Рейтинг: 8,5</p>
-        <p class="buttons">
-          <a class="button button-details" href="#">Подробнее</a>
-          <button class="button button-book" type="submit">Забронировать</button>
-        </p>
-      </div>
-    </li>
-      <li class="result-item">
-        <a class="image" href="blank.html">
-        <img class="hotel-alternate" src="img/dqimg.jpg" width="135" height="90" alt="Desert Quail Inn">
-      </a>
-      <div class="result-content">
-        <a href="blank.html">
-          <h3 class="name">Desert Quail Inn</h3>
-        </a>
-        <p class="type"><span class="type-2">Мотель</span> <span class="type-2">от 3000р.</span></p>
-        <p class="rating">Рейтинг: 8,9</p>
-        <p class="buttons">
-          <a class="button button-details" href="#">Подробнее</a>
-          <button class="button button-book" type="submit">Забронировать</button>
-        </p>
-      </div>
-    </li>
-      <li class="result-item">
-        <a class="image" href="blank.html">
-        <img class="hotel-alternate" src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-      </a>
-      <div class="result-content">
-        <a href="blank.html">
-          <h3 class="name">Villas at Poco Diablo</h3>
-        </a>
-        <p class="type"><span class="type-3">Апартаменты</span> <span class="type-3">от 2000р.</span></p>
-        <p class="rating">Рейтинг: 9,2</p>
-        <p class="buttons">
-          <a class="button button-details" href="#">Подробнее</a>
-          <button class="button button-book" type="submit">Забронировать</button>
-        </p>
-      </div>
-    </li>
-  </ul>
-</div>
-</section>
-</main>
-
-<footer class="page-footer">
-  <div class="container">
-<section class="footer-contacts">
-    <h2 class="visually-hidden">Контакты</h2>
-    <p class="caption">#visitSEDONA</p>
-    <p class="footer-contacts-phone">Тел:
-      <a class="contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
-      </p>
-  </section>
-  <section class="footer-socials">
-    <h2 class="visually-hidden">Соцсети</h2>
-    <ul class="icons">
-      <li>
-          <a class="social-button twitter" href="#">
-            <span class="visually-hidden">Твиттер</span>
+    <div class="hotels">
+      <h2 class="visually-hidden">Список отелей</h2>
+      <ul class="results-list">
+        <li class="result-item">
+          <a class="image" href="blank.html">
+            <img class="hotel-alternate" src="img/amara.jpg" width="135" height="90" alt="Amara">
           </a>
+          <div class="result-content">
+            <a class="naming" href="blank.html">
+              <h3 class="name name-1">Amara resort & SPA</h3>
+            </a>
+            <p class="type"><span class="type-1">Гостиница</span> <span class="type-1">от&nbsp;4000&nbsp;р.</span></p>
+            <div class="hotel-star-rating four-stars-hotel">
+              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+              </svg>
+              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+              </svg>
+              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+              </svg>
+              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+              </svg>
+            </div>
+            <div class="rating">Рейтинг: 8,5</div>
+            <p class="buttons">
+              <a class="button button-details" href="#">Подробнее</a>
+              <button class="button button-book" type="submit">Забронировать</button>
+            </p>
+          </div>
         </li>
-        <li>
-          <a class="social-button facebook" href="#">
-            <span class="visually-hidden">Фейсбук</span>
+        <li class="result-item">
+          <a class="image" href="blank.html">
+            <img class="hotel-alternate" src="img/dqimg.jpg" width="135" height="90" alt="Desert Quail Inn">
           </a>
+          <div class="result-content">
+            <a href="blank.html">
+              <h3 class="name">Desert Quail Inn</h3>
+            </a>
+            <p class="type"><span class="type-2">Мотель</span> <span class="type-2">от&nbsp;3000&nbsp;р.</span></p>
+            <div class="hotel-star-rating three-stars-motel">
+              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+              </svg>
+              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+              </svg>
+              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+              </svg>
+            </div>
+            <div class="rating">Рейтинг: 8,9</div>
+            <p class="buttons">
+              <a class="button button-details" href="#">Подробнее</a>
+              <button class="button button-book" type="submit">Забронировать</button>
+            </p>
+          </div>
         </li>
-        <li>
-          <a class="social-button youtube" href="#">
-            <span class="visually-hidden">YouTube</span>
+        <li class="result-item">
+          <a class="image" href="blank.html">
+            <img class="hotel-alternate" src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           </a>
-        </li>
-    </ul>
-  </section>
-  <section class="footer-copyright">
-    <h2 class="visually-hidden">Копирайт</h2>
-      <p class="website">Website&nbsp;by</p>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+          <div class="result-content">
+            <a href="blank.html">
+              <h3 class="name">Villas at Poco Diablo</h3>
+            </a>
+            <p class="type"><span class="type-3">Апартаменты</span> <span class="type-3">от&nbsp;2000&nbsp;р.</span></p>
+            <div class="hotel-star-rating two-stars-suite">
+              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+              </svg>
+              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+              </svg>
+            </div>
+            <div class="rating">Рейтинг: 9,2</div>
+            <p class="buttons">
+              <a class="button button-details" href="#">Подробнее</a>
+              <button class="button button-book" type="submit">Забронировать</button></p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
-</div>
-</footer>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="caption">#visitSEDONA</p>
+        <p class="footer-contacts-phone">Тел:
+          <a class="contacts-phone" href="tel:+74956660166">+7(495)&nbsp;666-01-66</a>
+        </p>
+      </section>
+      <section class="footer-socials">
+        <h2 class="visually-hidden">Соцсети</h2>
+        <ul class="icons">
+          <li>
+            <a class="social-button twitter" href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-button facebook" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-button youtube" href="#">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-copyright">
+        <h2 class="visually-hidden">Копирайт</h2>
+        <p class="website">Website&nbsp;by</p>
+        <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+      </section>
+    </div>
+  </footer>
 </div>
 
-  </body>
+</body>
 </html>
